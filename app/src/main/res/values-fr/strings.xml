@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ConversiAK</string>
+    <string name="navigation_drawer_open">Ouvrir le navigateur</string>
+    <string name="navigation_drawer_close">Fermer le navigateur</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">En-tête de navigation</string>
+    <string name="action_settings">Configuration</string>
+    <string name="menu_conversion">Conversion</string>
+    <string name="menu_closing_value_usd">Clôture (USD)</string>
+    <string name="menu_about">À propos de ConversiAK</string>
+</resources>
