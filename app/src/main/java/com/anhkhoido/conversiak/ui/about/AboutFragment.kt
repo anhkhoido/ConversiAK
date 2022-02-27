@@ -1,4 +1,4 @@
-package com.anhkhoido.conversiak.ui.slideshow
+package com.anhkhoido.conversiak.ui.about
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,13 +8,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.anhkhoido.conversiak.R
-import com.anhkhoido.conversiak.databinding.FragmentSlideshowBinding
+import com.anhkhoido.conversiak.databinding.FragmentAboutBinding
 
-class SlideshowFragment : Fragment() {
+class AboutFragment : Fragment() {
 
-    private lateinit var slideshowViewModel: SlideshowViewModel
-    private var _binding: FragmentSlideshowBinding? = null
+    private lateinit var aboutViewModel: AboutViewModel
+    private var _binding: FragmentAboutBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,14 +24,14 @@ class SlideshowFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
+        aboutViewModel =
+            ViewModelProvider(this).get(AboutViewModel::class.java)
 
-        _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        _binding = FragmentAboutBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textSlideshow
-        slideshowViewModel.text.observe(viewLifecycleOwner, Observer {
+        aboutViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

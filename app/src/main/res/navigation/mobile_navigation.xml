@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/nav_about"
-        android:name="com.anhkhoido.conversiak.ui.slideshow.SlideshowFragment"
+        android:name="com.anhkhoido.conversiak.ui.about.AboutFragment"
         android:label="@string/menu_about"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_about" />
 </navigation>
