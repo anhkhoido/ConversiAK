@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/nav_closing_value_usd"
-        android:name="com.anhkhoido.conversiak.ui.gallery.GalleryFragment"
+        android:name="com.anhkhoido.conversiak.ui.usdclosing.UsdClosingFragment"
         android:label="@string/menu_closing_value_usd"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_usdclosing" />
 
     <fragment
         android:id="@+id/nav_about"
