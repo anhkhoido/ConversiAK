@@ -1,4 +1,4 @@
-package com.anhkhoido.conversiak.ui.gallery
+package com.anhkhoido.conversiak.ui.usdclosing
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,13 +8,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.anhkhoido.conversiak.R
-import com.anhkhoido.conversiak.databinding.FragmentGalleryBinding
+import com.anhkhoido.conversiak.databinding.FragmentUsdclosingBinding
 
-class GalleryFragment : Fragment() {
+class UsdClosingFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
-    private var _binding: FragmentGalleryBinding? = null
+    private lateinit var usdClosingViewModel: UsdClosingViewModel
+    private var _binding: FragmentUsdclosingBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,14 +24,14 @@ class GalleryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        galleryViewModel =
-            ViewModelProvider(this).get(GalleryViewModel::class.java)
+        usdClosingViewModel =
+            ViewModelProvider(this).get(UsdClosingViewModel::class.java)
 
-        _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+        _binding = FragmentUsdclosingBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner, Observer {
+        usdClosingViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

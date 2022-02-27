@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/nav_closing_value_usd"
-        android:name="com.anhkhoido.conversiak.ui.gallery.GalleryFragment"
+        android:name="com.anhkhoido.conversiak.ui.usdclosing.UsdClosingFragment"
         android:label="@string/menu_closing_value_usd"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_usdclosing" />
 
     <fragment
         android:id="@+id/nav_about"
-        android:name="com.anhkhoido.conversiak.ui.slideshow.SlideshowFragment"
+        android:name="com.anhkhoido.conversiak.ui.about.AboutFragment"
         android:label="@string/menu_about"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_about" />
 </navigation>
