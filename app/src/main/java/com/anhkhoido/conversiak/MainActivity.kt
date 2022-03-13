@@ -1,6 +1,7 @@
 package com.anhkhoido.conversiak
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -17,10 +18,11 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+    private val TAG = "MainActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        Log.v(TAG, "Launch of ConversiAK")
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
