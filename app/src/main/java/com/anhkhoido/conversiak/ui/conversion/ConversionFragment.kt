@@ -1,6 +1,7 @@
 package com.anhkhoido.conversiak.ui.conversion
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,12 +19,14 @@ class ConversionFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+    private val TAG = "ConversionFragment"
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        Log.i(TAG, "onCreateView()")
         conversionViewModel =
             ViewModelProvider(this).get(ConversionViewModel::class.java)
 

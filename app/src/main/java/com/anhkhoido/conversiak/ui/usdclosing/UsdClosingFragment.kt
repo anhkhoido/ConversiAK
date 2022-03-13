@@ -1,6 +1,7 @@
 package com.anhkhoido.conversiak.ui.usdclosing
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ class UsdClosingFragment : Fragment() {
 
     private lateinit var usdClosingViewModel: UsdClosingViewModel
     private var _binding: FragmentUsdclosingBinding? = null
+    private val TAG = "UsdClosingFragment"
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,6 +26,7 @@ class UsdClosingFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        Log.i(TAG, "onCreateView()")
         usdClosingViewModel =
             ViewModelProvider(this).get(UsdClosingViewModel::class.java)
 

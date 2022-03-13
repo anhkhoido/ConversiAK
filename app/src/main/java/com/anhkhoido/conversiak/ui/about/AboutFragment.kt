@@ -1,6 +1,7 @@
 package com.anhkhoido.conversiak.ui.about
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ class AboutFragment : Fragment() {
 
     private lateinit var aboutViewModel: AboutViewModel
     private var _binding: FragmentAboutBinding? = null
+    private val TAG = "AboutFragment"
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,6 +26,7 @@ class AboutFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        Log.i(TAG, "onCreateView()")
         aboutViewModel =
             ViewModelProvider(this).get(AboutViewModel::class.java)
 
